@@ -1,6 +1,6 @@
-baseURL: 'https://steimer.com/'
-languageCode: 'de-de'
-title: 'Steimer Metallbau'
+baseURL: "https://steimer.betterindata.com/"
+languageCode: "de-de"
+title: "Steimer Metallbau"
 canonifyURLs: true
 
 sitemap:
