@@ -1,0 +1,58 @@
+{{ define "header" }} {{ partial "header" }} {{ end }} {{ define "main" }}
+
+<div class="p-8 bg-white rounded-lg shadow dark:bg-gray-800">
+  <p class="text-3xl font-bold text-center text-gray-800 dark:text-white">
+    Unser Team
+  </p>
+  <p
+    class="mb-12 text-xl font-normal text-center text-gray-500 dark:text-gray-200"
+  >
+    Schlosser aus Leidenschaft
+  </p>
+  <div class="flex flex-col items-center md:flex-row justify-center">
+    <div class="p-4">
+      <div class="mb-4 text-center opacity-90">
+        <img
+          alt="profil"
+          src="/img/avatar/ssteimer.webp"
+          class="mx-auto object-cover rounded-full h-40 w-40"
+        />
+      </div>
+      <div class="text-center">
+        <p class="text-2xl text-gray-800 dark:text-white">Stephan Steimer</p>
+        <p class="text-xl font-light text-gray-500 dark:text-gray-200">Chef</p>
+        <p
+          class="max-w-xs py-4 font-light text-gray-500 text-md dark:text-gray-400"
+        >
+          Stephan Steimer ist der Chef des Familien Unternehmens und führt das
+          Unternehmen seit 1969.
+        </p>
+      </div>
+    </div>
+    <div class="p-4">
+      <div class="mb-4 text-center opacity-90">
+        <img
+          alt="profil"
+          src="/img/avatar/tsteimer.webp"
+          class="mx-auto object-cover rounded-full h-40 w-40"
+        />
+      </div>
+      <div class="text-center">
+        <p class="text-2xl text-gray-800 dark:text-white">
+          Thomas-David Ruben Steimer
+        </p>
+        <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+          Junior Chef
+        </p>
+        <p
+          class="max-w-xs py-4 font-light text-gray-500 text-md dark:text-gray-400"
+        >
+          Thomas ist gelernter Schlosser und ist seit 2005 teil der Firma. Er
+          ist bekannt für seine Liebe zum Detail und seine Schweißkünste.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }} {{ define "footer" }} {{ partial "footer" }} {{ end }}

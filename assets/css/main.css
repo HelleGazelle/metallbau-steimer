@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Roboto, system-ui, sans-serif;
+  }
+}
+
+.logo {
+  font-family: Roboto, system-ui, sans-serif;
+  padding: 3px;
+  font-size: 25px;
+}
+
+body {
+  @apply bg-white;
+}
+
+.container {
+  @apply max-w-screen-2xl mx-auto px-3 md:px-8;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+    @apply font-bold;
+    @apply leading-tight;
+    margin-top: 0.67em;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-bold;
+    @apply leading-tight;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+  }
+  h3 {
+    @apply text-xl;
+    @apply font-bold;
+    @apply leading-tight;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  h4 {
+    @apply text-base;
+    @apply font-bold;
+    @apply leading-tight;
+  }
+  ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+  section {
+    display: block;
+  }
+}
+
+/* Style for image gallery grid container */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Style for each image in the grid */
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

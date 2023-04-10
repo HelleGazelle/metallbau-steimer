@@ -1,0 +1,68 @@
+{{ define "header" }} {{ partial "header" }} {{ end }} {{ define "main" }}
+
+<div class="w-full">
+  <img id="banner" class="w-full" src="/img/banner_small.webp" />
+</div>
+
+<!-- Projects -->
+<div class="flex flex-col items-center mt-12">
+  <span class="text-2xl break-words font-semibold"> Unsere Projekte </span>
+  <div class="w-16 p-2 border-b-4 mt-2 mb-6 border-gray-600"></div>
+  <div>
+    <ul class="grid sm:grid-cols-2 grid-cols-1 grid-rows-1 gap-4 items-stretch">
+      {{ range where .Site.Pages "Type" "eq" "projects"}} {{ if not (in
+      .RelPermalink "/projects/") }}
+      <li class="list-none p-0">{{ partial "card" (dict "context" .Page)}}</li>
+      {{ end}} {{ end}}
+    </ul>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="flex flex-col bg-gray-200 items-center mt-12 p-6">
+  <span class="text-2xl break-words font-semibold"> Kontaktieren Sie uns </span>
+  <div class="w-16 p-2 border-b-4 mt-2 mb-6 border-gray-600"></div>
+  <div class="flex justify-around">
+    <!-- Map -->
+    <a
+      class="h-64 w-full"
+      href="https://www.google.com/maps/place/Stephan+Steimer+Metallbau/@48.0337639,11.927828,14z/data=!4m6!3m5!1s0x479dfeaea1ae9e21:0x88755b325daa6673!8m2!3d48.02265!4d11.93114!16s%2Fg%2F11btln6v1y"
+    >
+      <img class="w-full h-full rounded-m shadow-lg" src="/img/map.jpg" />
+    </a>
+    <div class="flex flex-col justify-center p-2 font-semibold">
+      <div class="mb-6">
+        <p>Lindenstraße 17</p>
+        <p>85567 Bruck</p>
+        <button
+          class="rounded-lg border-black border-2 flex items-center p-2 hover:bg-gray-600 transition ease-in duration-200"
+        >
+          <img class="w-4 ml-1" src="/img/logo/map-pin.svg" />
+          <a
+            href="https://www.google.com/maps/place/Stephan+Steimer+Metallbau/@48.0337639,11.927828,14z/data=!4m6!3m5!1s0x479dfeaea1ae9e21:0x88755b325daa6673!8m2!3d48.02265!4d11.93114!16s%2Fg%2F11btln6v1y"
+            >Öffne in GoogleMaps</a
+          >
+        </button>
+      </div>
+      <div class="flex items-center">
+        <img class="w-4 ml-1" src="/img/logo/at.svg" />
+        <a href="mailto:metallbau.steimer@googlemail.com"
+          >metallbau.steimer@googlemail.com</a
+        >
+      </div>
+      <div class="flex items-center">
+        <img class="w-4 ml-1" src="/img/logo/phone.svg" />
+        <a href="tel:+491629233604">+491629233604</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Services -->
+<div class="flex flex-col items-center mt-6 p-6">
+  <span class="text-2xl break-words font-semibold">Leistungen </span>
+  <div class="w-16 p-2 border-b-4 mt-2 mb-6 border-gray-600"></div>
+  {{ partial "services.html"}}
+</div>
+
+{{ end }} {{ define "footer" }} {{ partial "footer" }} {{ end }}
