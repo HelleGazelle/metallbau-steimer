@@ -13,22 +13,6 @@
   />
 </div>
 
-<!-- Projects -->
-<div class="flex flex-col items-center mt-12">
-  <span class="text-2xl break-words font-semibold"> Unsere Projekte </span>
-  <div class="w-16 p-2 border-b-4 mt-2 mb-6 border-gray-600"></div>
-  <div>
-    <ul
-      class="grid sm:grid-cols-2 grid-cols-1 grid-rows-1 gap-4 items-stretch p-5"
-    >
-      {{ range where .Site.Pages "Type" "eq" "projects"}} {{ if not (in
-      .RelPermalink "/projects/") }}
-      <li class="list-none p-0">{{ partial "card" (dict "context" .Page)}}</li>
-      {{ end}} {{ end}}
-    </ul>
-  </div>
-</div>
-
 <!-- Contact -->
 <div class="flex flex-col bg-gray-200 items-center mt-12 p-6">
   <span class="text-2xl break-words font-semibold"> Kontaktieren Sie uns </span>
@@ -40,8 +24,8 @@
     >
       <img class="w-[450px] rounded-m shadow-lg" src="/img/map.jpg" />
     </a>
-    <div class="flex flex-col justify-center p-2 font-semibold">
-      <div class="mb-6">
+    <div class="flex flex-col justify-center p-2 font-semibold text-center">
+      <div class="mb-6 flex flex-col justify-center items-center">
         <p>Lindenstraße 17</p>
         <p>85567 Bruck</p>
         <button
@@ -54,22 +38,46 @@
           >
         </button>
       </div>
-      <div class="flex items-center">
+      <div class="flex items-center justify-center">
         <img class="w-4 ml-1" src="/img/logo/at.svg" />
         <a href="mailto:metallbau.steimer@googlemail.com"
           >metallbau.steimer@googlemail.com</a
         >
       </div>
-      <div class="flex items-center">
+      <div class="flex items-center mb-6 justify-center">
         <img class="w-4 ml-1" src="/img/logo/phone.svg" />
         <a href="tel:+491629233604">+491629233604</a>
       </div>
+      <div class="flex items-center justify-center">
+        <img class="w-6 ml-1" src="/img/logo/clock.svg" />
+        <p class="text-xl">Öffnungszeiten</p>
+      </div>
+      <p class="">Montag-Donnerstag: 8-17 Uhr</p>
+      <p class="">Freitag: 8-12 Uhr</p>
     </div>
   </div>
 </div>
 
+<!-- Projects -->
+<div class="flex flex-col items-center mt-12">
+  <span class="text-2xl break-words font-semibold"> Unsere Projekte </span>
+  <div class="w-16 p-2 border-b-4 mt-2 mb-6 border-gray-600"></div>
+  <div>
+    <ul
+      class="grid sm:grid-cols-2 grid-cols-1 grid-rows-1 gap-4 items-stretch p-5"
+    >
+      {{ range where .Site.Pages "Type" "eq" "projects"}} {{ if not (in
+      .RelPermalink "/projects/") }}
+      <li class="list-none p-0">
+        {{ partial "blogpost" (dict "context" .Page)}}
+      </li>
+      {{ end}} {{ end}}
+    </ul>
+  </div>
+</div>
+
 <!-- Services -->
-<div class="flex flex-col items-center mt-6 p-6">
+<div class="flex flex-col items-center mt-6 p-6 bg-gray-200">
   <span class="text-2xl break-words font-semibold">Leistungen </span>
   <div class="w-16 p-2 border-b-4 mt-2 mb-6 border-gray-600"></div>
   {{ partial "services.html"}}

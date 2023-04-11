@@ -1,52 +1,67 @@
 {{ define "header" }} {{ partial "header" }} {{ end }} {{ define "main" }}
 
-<div class="p-8 bg-white rounded-lg shadow dark:bg-gray-800">
-  <p class="text-3xl font-bold text-center text-gray-800 dark:text-white">
-    Unser Team
+<!-- Über uns -->
+<div class="p-8 bg-white rounded-lg shadow mt-4 text-center">
+  <p class="text-3xl font-bold text-gray-600">Die Schlosserei</p>
+  <p class="mb-8 text-xl font-normal text-gray-600">
+    Schlosserei mit Herzblut und Handwerkstradition
   </p>
-  <p
-    class="mb-12 text-xl font-normal text-center text-gray-500 dark:text-gray-200"
-  >
+  <div class="md:px-96">
+    <p class="font-light text-gray-600 text-xl">
+      Herzlich willkommen bei unserer Schlosserei - einem Familienunternehmen,
+      das seit der Gründung durch Stephan Steimer höchste Qualität und
+      Zuverlässigkeit bietet. Als Schlosserei mit langjähriger Erfahrung sind
+      wir auf die Herstellung von maßgeschneiderten Metallkonstruktionen und die
+      Reparatur von bestehenden Strukturen spezialisiert. Von Türen und Fenstern
+      über Treppen und Geländer bis hin zu Gartenzäunen und Einfahrtstoren -
+      unser kompetentes Team aus erfahrenen Handwerkern setzt Ihre individuellen
+      Wünsche und Vorstellungen um. Wir arbeiten mit hochwertigen Materialien
+      und modernen Technologien, um langlebige Produkte von höchster Qualität zu
+      liefern. Kontaktieren Sie uns noch heute, um Ihre Metallprojekte in die
+      Realität umzusetzen!
+    </p>
+  </div>
+  <div class="flex justify-center w-full mt-8">
+    <img alt="worker" src="/img/worker.jpg" class="w-[800px] rounded-lg" />
+  </div>
+</div>
+
+<!-- Team -->
+<div class="p-8 bg-white rounded-lg shadow mt-4">
+  <p class="text-3xl font-bold text-center text-gray-600">Unser Team</p>
+  <p class="mb-8 text-xl font-normal text-center text-gray-600">
     Schlosser aus Leidenschaft
   </p>
   <div class="flex flex-col items-center md:flex-row justify-center">
-    <div class="p-4">
+    <div class="p-4 h-96">
       <div class="mb-4 text-center opacity-90">
         <img
           alt="profil"
           src="/img/avatar/ssteimer.webp"
-          class="mx-auto object-cover rounded-full h-40 w-40"
+          class="mx-auto object-cover rounded-full h-40 w-40 shadow-lg"
         />
       </div>
       <div class="text-center">
-        <p class="text-2xl text-gray-800 dark:text-white">Stephan Steimer</p>
-        <p class="text-xl font-light text-gray-500 dark:text-gray-200">Chef</p>
-        <p
-          class="max-w-xs py-4 font-light text-gray-500 text-md dark:text-gray-400"
-        >
+        <p class="text-2xl text-gray-600">Stephan Steimer</p>
+        <p class="text-xl font-light text-gray-600">Chef</p>
+        <p class="max-w-xs py-4 font-light text-gray-600 text-xl">
           Stephan Steimer ist der Chef des Familien Unternehmens und führt das
           Unternehmen seit 1969.
         </p>
       </div>
     </div>
-    <div class="p-4">
+    <div class="p-4 h-96">
       <div class="mb-4 text-center opacity-90">
         <img
           alt="profil"
           src="/img/avatar/tsteimer.webp"
-          class="mx-auto object-cover rounded-full h-40 w-40"
+          class="mx-auto object-cover rounded-full h-40 w-40 shadow-lg"
         />
       </div>
       <div class="text-center">
-        <p class="text-2xl text-gray-800 dark:text-white">
-          Thomas-David Ruben Steimer
-        </p>
-        <p class="text-xl font-light text-gray-500 dark:text-gray-200">
-          Junior Chef
-        </p>
-        <p
-          class="max-w-xs py-4 font-light text-gray-500 text-md dark:text-gray-400"
-        >
+        <p class="text-2xl text-gray-600">Thomas-David Ruben Steimer</p>
+        <p class="text-xl font-light text-gray-600">Junior Chef</p>
+        <p class="max-w-xs py-4 font-light text-gray-600 text-xl">
           Thomas ist gelernter Schlosser und ist seit 2005 teil der Firma. Er
           ist bekannt für seine Liebe zum Detail und seine Schweißkünste.
         </p>
