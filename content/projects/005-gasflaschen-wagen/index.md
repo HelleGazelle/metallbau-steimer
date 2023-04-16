@@ -12,9 +12,9 @@ Unser rollengeführter Wagen zur Gasflaschentransportation ist die ideale Lösun
         <source src="./img/steimer gasflaschen transport wagen (1).mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <img src="./img/steimer gasflaschen transport wagen (1).jpg" alt="Transportwagen für Gasflaschen"/>
-    <img src="./img/steimer gasflaschen transport wagen (2).jpg" alt="Transportwagen für Gasflaschen"/>
-    <img src="./img/steimer gasflaschen transport wagen (3).jpg" alt="Transportwagen für Gasflaschen"/>
-    <img src="./img/steimer gasflaschen transport wagen (4).jpg" alt="Transportwagen für Gasflaschen"/>
-    <img src="./img/steimer gasflaschen transport wagen (5).jpg" alt="Transportwagen für Gasflaschen"/>
+    <img loading="lazy" src="./img/steimer gasflaschen transport wagen (1).webp" alt="Transportwagen für Gasflaschen"/>
+    <img loading="lazy" src="./img/steimer gasflaschen transport wagen (2).webp" alt="Transportwagen für Gasflaschen"/>
+    <img loading="lazy" src="./img/steimer gasflaschen transport wagen (3).webp" alt="Transportwagen für Gasflaschen"/>
+    <img loading="lazy" src="./img/steimer gasflaschen transport wagen (4).webp" alt="Transportwagen für Gasflaschen"/>
+    <img loading="lazy" src="./img/steimer gasflaschen transport wagen (5).webp" alt="Transportwagen für Gasflaschen"/>
 </div>
