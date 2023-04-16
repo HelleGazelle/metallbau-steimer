@@ -18,6 +18,10 @@ body {
   @apply bg-white;
 }
 
+article {
+  @apply mt-2;
+}
+
 .container {
   @apply max-w-screen-2xl mx-auto px-3 md:px-8;
 }

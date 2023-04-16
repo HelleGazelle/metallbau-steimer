@@ -1,5 +1,5 @@
 <article
-  class="max-w-sm overflow-hidden shadow-xl bg-blue-500 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
+  class="max-w-sm h-full overflow-hidden shadow-xl bg-blue-500 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
 >
   {{ $img := cond (isset . "img") .img (print .context.RelPermalink
   "img/cover.webp") }}
