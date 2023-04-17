@@ -9,6 +9,10 @@
       class="text-xl prose dark:prose-invert pt-1 mx-auto px-3 md:px-8 min-w-0 max-w-none w-full"
     >
       <article>{{ .Content }}</article>
+      <div class="mt-6">
+        {{ partial "imagegallery.html" (dict "context" . "images"
+        .Params.images) }}
+      </div>
     </div>
   </section>
 </main>

@@ -1,0 +1,7 @@
+<div id="photos">
+  {{ range $index, $element := .images}} {{ $position := add $index 1 }}
+  <a href="{{ $element }}" target="_blank">
+    <img src="{{ $element }}" class="p-4" />
+  </a>
+  {{ end }}
+</div>
