@@ -1,7 +1,34 @@
 <div id="photos">
   {{ range $index, $element := .images}} {{ $position := add $index 1 }}
-  <a href="{{ $element }}" target="_blank">
-    <img src="{{ $element }}" class="p-4" />
-  </a>
+  <img
+    src="{{ $element }}"
+    onclick="zoomIn(this)"
+    class="p-0.5 cursor-pointer"
+  />
   {{ end }}
 </div>
+
+<script>
+  function zoomIn(img) {
+    // Create a new <div> element to hold the zoomed-in image
+    var zoomedImgDiv = document.createElement("div");
+    zoomedImgDiv.classList.add("zoomed-img-container");
+
+    // Create a new <img> element for the zoomed-in image
+    var zoomedImg = document.createElement("img");
+    zoomedImg.src = img.src;
+    zoomedImg.alt = img.alt;
+    zoomedImg.classList.add("zoomed-img");
+
+    // Add the zoomed-in image to the <div> container
+    zoomedImgDiv.appendChild(zoomedImg);
+
+    // Add the <div> container to the page
+    document.body.appendChild(zoomedImgDiv);
+
+    // Add an event listener to the zoomed-in image to remove it when clicked
+    zoomedImg.addEventListener("click", function () {
+      document.body.removeChild(zoomedImgDiv);
+    });
+  }
+</script>
