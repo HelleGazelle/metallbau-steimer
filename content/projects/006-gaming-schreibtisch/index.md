@@ -1,20 +1,21 @@
 ---
-title: "Einzigartiger Schreibtisch aus Metall: Robust, Stilvoll und Individuell"
+title: Einzigartiger Schreibtisch aus Metall
 draft: false
 cover: "img/cover.webp"
-description: Unser Gaming Schreibtisch ist die perfekte Kombination aus Funktionalität und Ästhetik"
+hero: "img/hero.webp"
+description: "Unser Gaming Schreibtisch ist die perfekte Kombination aus Funktionalität und Ästhetik: Robust, Stilvoll und Individuell"
 images:
-  - "img/gaming schreibtisch 7.webp"
-  - "img/gaming schreibtisch 5.webp"
-  - "img/gaming schreibtisch 6.webp"
-  - "img/gaming schreibtisch 1.webp"
-  - "img/gaming schreibtisch 2.webp"
-  - "img/gaming schreibtisch 3.webp"
-  - "img/gaming schreibtisch 4.webp"
-  - "img/gaming schreibtisch 8.webp"
-  - "img/gaming schreibtisch 9.webp"
-  - "img/gaming schreibtisch 10.webp"
-  - "img/gaming schreibtisch 11.webp"
+  - "img/gaming schreibtisch (1).webp"
+  - "img/gaming schreibtisch (10).webp"
+  - "img/gaming schreibtisch (11).webp"
+  - "img/gaming schreibtisch (7).webp"
+  - "img/gaming schreibtisch (5).webp"
+  - "img/gaming schreibtisch (6).webp"
+  - "img/gaming schreibtisch (2).webp"
+  - "img/gaming schreibtisch (3).webp"
+  - "img/gaming schreibtisch (4).webp"
+  - "img/gaming schreibtisch (8).webp"
+  - "img/gaming schreibtisch (9).webp"
 ---
 
 Als leidenschaftlicher Schlosser und Gaming-Enthusiast war es für mich ein tolles Projekt, einen Gaming-Schreibtisch aus Metall zu fertigen. Der Schreibtisch ist nicht nur stabil und langlebig, sondern bietet auch ein einzigartiges Design, das perfekt zu jedem Setup passt.

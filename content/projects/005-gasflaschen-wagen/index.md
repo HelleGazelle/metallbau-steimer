@@ -1,6 +1,6 @@
 ---
 title: Rollengeführter Wagen für Gas Flaschen
-draft: false
+draft: true
 cover: "img/cover.webp"
 description: "Robuste Installation für eine einfache uns sicheren Transport für Gasflaschen"
 ---
