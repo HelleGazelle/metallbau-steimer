@@ -9,7 +9,7 @@ type: page
 <p>Stephan Steimer Metallbau</p>
 <p> Lindenstraße 17</p>
 <p>85567 Bruck</p>
-<h2 id="m56">Kontaktmöglichkeiten</h2>E-Mail-Adresse: <p>❓</p>
+<h2 id="m56">Kontaktmöglichkeiten</h2>E-Mail-Adresse: <p>metallbausteimer@googlemail.com</p>
 Telefon: <p>+49 162 9233 604</p>
 <h2 id="m58">Angaben zum Unternehmen</h2>
 Umsatzsteuer Identifikationsnummer (USt-ID): <p>❓</p>
